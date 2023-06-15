@@ -1,0 +1,50 @@
+.contenr {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+}
+.block{
+    display: flex;
+    gap: 30px;
+}
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+.card2 {
+    transition: .7s cubic-bezier(0.2, 1.4, 1, 1.52);
+    width: 280px;
+    height: 280px;
+    background-color: #0a74ec;
+    position: absolute;
+    transform: rotate(45deg) translateY(280px);
+}
+.card:hover .card2 {
+    transform: rotate(45deg) translateY(0px) ;
+}
+.white {
+    z-index: -1;
+}
+.card:hover .white {
+    z-index: 2;
+}
+.twitter{ background-color: #00AAF4;}
+.google{ background-color: #FA5151;}
+.dribble{background-color: #DB66D1;}
+.scype{background-color: #00AAF4;}
